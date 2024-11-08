@@ -1,0 +1,117 @@
+/* Updated body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: lightblue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main container */
+#controls {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Center headings */
+h1, h2 {
+    text-align: center;
+}
+
+/* Carrier Frequency Buttons Styles */
+#carrier-freq-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+#carrier-freq-buttons button {
+    padding: 15px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background-color: #555;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+/* Assign unique colors to each button */
+#carrier-freq-buttons button:nth-child(1) {
+    background-color: #e74c3c;
+}
+
+#carrier-freq-buttons button:nth-child(2) {
+    background-color: #e67e22;
+}
+
+#carrier-freq-buttons button:nth-child(3) {
+    background-color: #f1c40f;
+}
+
+#carrier-freq-buttons button:nth-child(4) {
+    background-color: #2ecc71;
+}
+
+#carrier-freq-buttons button:nth-child(5) {
+    background-color: #3498db;
+}
+
+#carrier-freq-buttons button:nth-child(6) {
+    background-color: #9b59b6;
+}
+
+#carrier-freq-buttons button:nth-child(7) {
+    background-color: #1abc9c;
+}
+
+/* Hover effects for colored buttons */
+#carrier-freq-buttons button:hover {
+    filter: brightness(1.1);
+}
+
+#carrier-freq-buttons button:active {
+    transform: scale(0.95);
+}
+
+#carrier-freq-buttons button.active {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+/* Volume Control Styles */
+#volume-control {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Slider Styles */
+#harmonicity-control, #modulation-index-control {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+.slider-value {
+    margin-top: 10px;
+    font-size: 18px;
+    color: white;
+}
+
+input[type="range"] {
+    width: 80%;
+    margin: 10px auto;
+}
+
+
+/* Controls spacing */
+#harmonicity-control, #modulation-index-control {
+    margin-top: 30px;
+}
+
+/* Other existing styles */
