@@ -1,12 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>RNBO FM Synthesizer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Add this line -->
+    <title>Poyraz FM Synthesizer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensure mobile responsiveness -->
     <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 
+</head>
 <body>
-    <h1>RNBO FM Synthesizer</h1>
+    <h1>Poyraz FM Synthesizer</h1>
     <div id="controls">
         <!-- Carrier Frequency Buttons -->
         <div id="carrier-frequency-controls">
@@ -18,19 +21,23 @@
         <!-- Volume Slider -->
         <div id="volume-control">
             <h2>Volume</h2>
-            <input type="range" id="volume-slider" min="0" max="200" value="0">
+            <input type="range" id="volume-slider" min="0" max="200" value="100">
         </div>
-        <!-- Harmonicity Slider -->
-        <div id="harmonicity-control">
+        <!-- Harmonicity Rotary Knob -->
+        <div id="harmonicity-control" class="knob-container">
             <h2>Harmonicity</h2>
-            <input type="range" id="harmonicity-slider" min="0" max="20000" value="0">
-            <div id="harmonicity-value" class="slider-value">0</div>
+            <div id="harmonicity-knob" class="knob">
+                <div class="knob-indicator"></div>
+            </div>
+            <div id="harmonicity-value" class="knob-value">0</div>
         </div>
-        <!-- Modulation Index Slider -->
-        <div id="modulation-index-control">
+        <!-- Modulation Index Rotary Knob -->
+        <div id="modulation-index-control" class="knob-container">
             <h2>Modulation Index</h2>
-            <input type="range" id="modulation-index-slider" min="0" max="20000" value="0">
-            <div id="modulation-index-value" class="slider-value">0</div>
+            <div id="modulation-index-knob" class="knob">
+                <div class="knob-indicator"></div>
+            </div>
+            <div id="modulation-index-value" class="knob-value">0</div>
         </div>
     </div>
 
