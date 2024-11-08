@@ -90,28 +90,55 @@ h1, h2 {
     margin-top: 30px;
 }
 
-/* Slider Styles */
-#harmonicity-control, #modulation-index-control {
-    margin-top: 20px;
-    text-align: center;
-    color: white;
+/* Knob Container */
+.knob-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
 }
 
-.slider-value {
+/* Knob Styles */
+.knob {
+    width: 100px;
+    height: 100px;
+    background-color: #444;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    touch-action: none; /* Prevents default touch behaviors */
+}
+
+.knob-indicator {
+    width: 6px;
+    height: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 25%;
+    left: 47%;
+    transform-origin: bottom center;
+    transform: rotate(0deg);
+}
+
+.knob-value {
+    text-align: center;
     margin-top: 10px;
     font-size: 18px;
     color: white;
 }
 
-input[type="range"] {
-    width: 80%;
-    margin: 10px auto;
+/* Rotating the knob */
+#harmonicity-knob {
+    transform: rotate(-135deg); /* Start position */
 }
 
-
-/* Controls spacing */
-#harmonicity-control, #modulation-index-control {
-    margin-top: 30px;
+#modulation-index-knob {
+    transform: rotate(-135deg); /* Start position */
 }
 
-/* Other existing styles */
+/* Knob labels */
+#harmonicity-control h2,
+#modulation-index-control h2 {
+    margin-bottom: 10px;
+}
